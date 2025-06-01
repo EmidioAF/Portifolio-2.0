@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Emidio A. F.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3b8183;
+      color: #c8cbc1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(90deg, #2c2f34, #40454b);
+      color: #c8cbc1;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #c8cbc1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      padding: 2rem;
+    }
+
+    .projeto {
+      background: #2c2f34;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .projeto h3 {
+      margin-top: 0;
+      color: #f3f3f3;
+    }
+
+    .projeto p {
+      color: #c8cbc1;
+    }
+
+    footer {
+      width: 100%;
+      padding: 1rem;
+      background: #40454b;
+      text-align: center;
+      color: #c8cbc1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Emidio Angelotti Filho - Aspirante a Back-End Developer</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p> Me formei pelo Colégio da Polícia Militar do Paraná em 2024, terminando meu ciclo de 6 anos na instituição, estando presente do início de meu Ensino Fundamental II ao Ensino Médio Completo.</p>
+    <p> Ingressei em 2025 na Pontifícia Universidade Católica do Paraná pelo curso de Bacharelado em Sistemas de Informação.</p>
+    <p> Ganhei experiência inicial na área de TI, ingressando pelo Programa Menor Aprendiz na Associação dos Servidores Públicos do Paraná, atuando na empresa por 1 ano e 8 meses como auxiliar geral.</p>
+    <p> Procurando melhorar meu aprendizado em desenvolvimento Back-End, com foco em C#, C++ e Java.</p>
+    <p> Em busca de entendimento necessário para desenvolvimento Mobile Android, Banco de Dados e Segurança da Informação.</p>
+    </section>
+
+  <section id="projetos">
+    <h2>Projetos Individuais & Projetos em Grupos.</h2>
+    <div class="projeto">
+      <h3>General Sporting Bet</h3>
+      <p>Projeto com JavaScript, HTML e CSS na criação de um sistema inicial de gerenciamento de apostas esportivas e desportivas.</p>
+    </div>
+    <div class="projeto">
+      <h3>Arduíno Simples de Leitura de Movimento</h3>
+      <p>Projeto desenvolvido utilizando sistema Arduíno básico para construir a base teórica e simples de um aparelho para medir movimentos que ocorrem ao redor do mesmo.</p>
+    </div>
+    <div class="projeto">
+      <h3>Em desenvolvimento</h3>
+      <p>---</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: angelottiemidio@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/EmidioAF" target="_blank">@EmidioAF/</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/emidioaf" target="_blank">/in/emidioaf</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Emidio Angelotti Filho. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
